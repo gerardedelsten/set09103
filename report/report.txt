@@ -1,0 +1,73 @@
+Introduction to my web-app
+
+I have developed a prototype for a web app that gives information on SPFL (Scottish Professional Football League Clubs)
+the prototype only has Premiership Clubs, Aberdeen, Celtic, Dundee, Dundee United, Hamilton Academical, Hearts,
+Inverness Caledonian Thistle, Kilmarnock, Motherwell, Partick Thistle, Ross County and St. Johnstone.
+
+The home page will be a basic home page with the SPFL logo and links to SPFL social media such as Facebook, Twitter and Youtube.
+It will also have the navigation that will be the same throughout the web-app which once clicked on will take users to, home page,
+teams and standings.
+
+Once the user navigates to the teams.html page via the nav bar the twelve team badges will show,
+these are direct links to the SPFL page for the selected club, this will give users detailed information such as
+club kit, honors, stadium information including pitch dimensions, address and capacity, league standings,
+news results and fixtures with selected club top goal scorer.
+
+The standings page on the prototype will show the premiership league table as it stands, this will give users information on how well clubs are doing,
+information on the league table will show, what teams position in the league is, how many games they've won, lost and drawn, as well as having goal difference and
+points accumulated so far.
+
+Design
+
+The design is basic, the style is a white background with a dark blue nav bar with a gold underline, these are the colours used on on the logo for the SPFL, this is
+kept consistently on the web app, on the home page, the SPFL logo is centred and will have dummy text under this was done simply by using center align html code.
+On the teams page, the clubs badges are laid out using a table with 3 rows of 4 columns, this is also centres to give consistency from the home page.
+The standings page has two images, one the SPFL logo and the Premiership logo, both centred with html code, the league table is made with a simple table, the table
+is split with position, name, wins, loses, draw, goal difference and points in the columns and the 13 rows includes the header and 12 teams, this in the prototype shows
+only the Premiership clubs, but when extended it will have the same consistent look when other divisions are incorporated.
+
+Enhancements
+
+The enhancements that I would make to the prototype would be that it isn't responsive on links, the index finger hand changes when scrolled over things such as club badges,
+I would like a responsive rollover effect on it so that the user knows that its a link by making the club badge a couple of pixels bigger, the league standing page is needing
+a new look, I would like to give edits for things that league positions mean in the division such as, green for the top club, gold for 2 and 3rd clubs as they would
+qualify for Europe, a line separating top half from bottom, a light red shade for second bottom team as they would be in a relegation play off and a dark red shade for
+the bottom team as they face automatic relegation from the division. This would make the app look that bit more professional, the users would find it more attractive to look at.
+
+I would also add Youtube video of to the home page of things like goals of the month contenders, this would showcase the talent in the leagues, as well as being more
+appealing to users.
+
+Personal Evaluation
+
+I feel like I've gained a basic understanding of how to use Levinux from having never used it or anything similar, I was struggling at the start with the program as I
+never knew the terminal was strict with tabs and spaces, this resulted in many errors for my app, during tutorials while actually learning how to use it, once that error was pointed
+out to me I felt a lot more confident in creating my app, I also got more used to typing the syntax, the longer I kept working away at my mistakes that I was making.
+I was used to linking my pages using html that wasn't working for the app because I never knew I had to use the {{ url_forstatic("page name") }}
+while I was building the web app, I never let it slow me down while I couldn't navigate to the page, I created the html side of the website locally and when I found out about the navigation
+I then added it in I attended a syntax surgery sessions that the university provides to get tips on how to use python flask. 
+I struggled to get images working on my prototype web app, I have had to externally host images for it to work,
+I will be looking for the app to host all of its own images for when its complete.
+
+Resources used
+
+Favicon - http://spfl.co.uk/favicon.png
+SPFL Main Logo - https://upload.wikimedia.org/wikipedia/en/3/33/Scottish_Professional_Football_League.svg
+Premiership logo -http://spfl.co.uk/docs/067_028__ladbrokespremiership_1438786338_standard.png
+
+Football Team Badges:
+Aberdeen -http://spfl.co.uk/docs/067_323__aberdeenlogonewjuly2011_1375088117_thumb.jpg
+Celtic -http://spfl.co.uk/docs/009__001__club_crests__Celtic__1275569664_thumb.jpg
+Dundee -http://spfl.co.uk/docs/009__034__club_crests__Dundee_Crest__1275900998_thumb.jpg
+Dundee -United-http://spfl.co.uk/docs/009__001__club_crests__Dundee_United__1275569652_thumb.jpg
+Hamilton -http://spfl.co.uk/docs/009__001__club_crests__Hamilton_Academical__1275569612_thumb.jpg
+Hearts -http://spfl.co.uk/docs/009__001__club_crests__Hearts__1275569623_thumb.jpg
+Inverness Caledianian Thistle -http://spfl.co.uk/docs/009__001__club_crests__Inv_Caledonian_Thistle__1275569827_thumb.jpg
+Kilmarnock -http://spfl.co.uk/docs/009__001__club_crests__Kilmarnock__1275569529_thumb.jpg
+Motherwell -img src="http://spfl.co.uk/docs/009__001__club_crests__Motherwell__1275569517_thumb.png
+Partick -http://spfl.co.uk/docs/009__001__club_crests__Partick_Thistle__1276086207_thumb.jpg
+Ross County -http://spfl.co.uk/docs/009__001__club_crests__Ross_County__1276086245_thumb.jpg
+St.Johnstone -http://spfl.co.uk/docs/009__034__club_crests__St_Johnstone_99__1275901073_thumb.jpg
+
+Facebook logo -http://www.jcub.edu.au/media/1757223/facebook-icon_small_zps48946999.png
+Twitter logo -http://nihdirectorsblog.files.wordpress.com/2013/07/twitter-icon.gif
+Youtube logo -http://www.eastviewbaptist.org.nz/images/page_images/YouTube-Logo-Social-Small.png

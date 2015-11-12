@@ -1,0 +1,96 @@
+<html>
+<head>
+  <title>Teams</title>
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+  <style>
+    body{ 
+      padding-top: 50px;
+    } 
+  </style>
+</head>
+<link rel="icon" href="http://spfl.co.uk/favicon.png" type="image/png" />
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+      data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+      aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href={{ url_for("home")}}>SPFL</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="{{ url_for("teams")}}">Teams</a></li>
+        <li><a href="{{ url_for("standings")}}">Standings</a></li>
+       </ul>
+       </div>
+    </div>
+  </nav>
+<div class="container">
+<div style="text-align: center;">
+<IMG class="spfl" src="https://upload.wikimedia.org/wikipedia/en/3/33/Scottish_Professional_Football_League.svg" alt="SPFL">
+
+   
+       <h1> <a href="http://spfl.co.uk/premiership/">Premiership</h1>
+        
+        <p class="lead"> 
+<table align="center">
+    <tr>
+        <td><a href="http://spfl.co.uk/clubs/aberdeen/"
+target="_blank"><img src="http://spfl.co.uk/docs/067_323__aberdeenlogonewjuly2011_1375088117_thumb.jpg"/</a></td>
+
+        <td><a href="http://spfl.co.uk/clubs/celtic/"
+target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Celtic__1275569664_thumb.jpg"/</a></td>
+
+        <td><a href="http://spfl.co.uk/clubs/dundee"
+target="_blank"><img src="http://spfl.co.uk/docs/009__034__club_crests__Dundee_Crest__1275900998_thumb.jpg"/</a></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/dundee-united/"
+target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Dundee_United__1275569652_thumb.jpg"/</a></td>
+    </tr>
+
+    <tr>
+        <td><a href="http://spfl.co.uk/clubs/hamilton/"
+target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Hamilton_Academical__1275569612_thumb.jpg"/</a></td>
+
+        <td><a href="http://spfl.co.uk/clubs/hearts/"
+target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Hearts__1275569623_thumb.jpg"/</a></td>
+
+        <td><a href="http://spfl.co.uk/clubs/inverness-caledonian-thistle/"
+target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Inv_Caledonian_Thistle__1275569827_thumb.jpg"/</a></td>
+
+        <td><a href="http://spfl.co.uk/clubs/kilmarnock/"
+target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Kilmarnock__1275569529_thumb.jpg"/</a></td>
+    </tr>
+
+    <tr>
+        <td><a href="http://spfl.co.uk/clubs/motherwell/"
+target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Motherwell__1275569517_thumb.png"/</a></td>
+
+        <td><a href="http://spfl.co.uk/clubs/partick/"
+target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Partick_Thistle__1276086207_thumb.jpg"/</a></td>
+
+        <td><a href="http://spfl.co.uk/clubs/ross-county/"
+target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Ross_County__1276086245_thumb.jpg"/</a></td>
+
+        <td><a href="http://spfl.co.uk/clubs/st-johnstone/"
+target="_blank"><img src="http://spfl.co.uk/docs/009__034__club_crests__St_Johnstone_99__1275901073_thumb.jpg"/</a></td>
+    </tr>
+</table>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src={{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
+
+
