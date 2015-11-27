@@ -8,6 +8,18 @@
     } 
   </style>
 </head>
+<script>
+function bigImg(x) {
+    x.style.height = "105px";
+    x.style.width = "105px";
+}
+
+function normalImg(x) {
+    x.style.height = "100px";
+    x.style.width = "100px";
+}
+</script>
+
 <link rel="icon" href="http://spfl.co.uk/favicon.png" type="image/png" />
 
 <body>
@@ -23,74 +35,252 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href={{ url_for("home")}}>SPFL</a>
+        <a class="navbar-brand" href={{ url_for("home")}}>SPFL Home</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        
+       
         <li><a href="{{ url_for("teams")}}">Teams</a></li>
         <li><a href="{{ url_for("standings")}}">Standings</a></li>
+	 <li><a href="{{ url_for("media")}}">Media</a></li>
        </ul>
        </div>
     </div>
   </nav>
 <div class="container">
 <div style="text-align: center;">
-<IMG class="spfl" src="https://upload.wikimedia.org/wikipedia/en/3/33/Scottish_Professional_Football_League.svg" alt="SPFL">
+<IMG class="spfl" src="http://i1.dailyrecord.co.uk/incoming/article2089077.ece/ALTERNATES/s298/Scottish-Premishership.jpg " alt="SPFL">
 
    
-       <h1> <a href="http://spfl.co.uk/premiership/">Premiership</h1>
-        
+      
+          </div>
         <p class="lead"> 
+<div class="container">
 <table align="center">
+
+
     <tr>
         <td><a href="http://spfl.co.uk/clubs/aberdeen/"
-target="_blank"><img src="http://spfl.co.uk/docs/067_323__aberdeenlogonewjuly2011_1375088117_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://spfl.co.uk/docs/067_323__aberdeenlogonewjuly2011_1375088117_thumb.jpg" alt="Aberdeen" width="95" height="95"></a><p align="center">Aberdeen</p></td>
 
         <td><a href="http://spfl.co.uk/clubs/celtic/"
-target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Celtic__1275569664_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://spfl.co.uk/docs/009__001__club_crests__Celtic__1275569664_thumb.jpg" alt="Celtic" width="95" height="95"></a><p align="center">Celtic</p></td>
 
         <td><a href="http://spfl.co.uk/clubs/dundee"
-target="_blank"><img src="http://spfl.co.uk/docs/009__034__club_crests__Dundee_Crest__1275900998_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__034__club_crests__Dundee_Crest__1275900998_thumb.jpg"alt="Dundee" width="95" height="95"></a><p align="center">Dundee</p></td>
+
 
 
         <td><a href="http://spfl.co.uk/clubs/dundee-united/"
-target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Dundee_United__1275569652_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Dundee_United__1275569652_thumb.jpg"alt="Dundee&nbsp;United" width="95" height="95"></a><p align="center">Dundee United</p></td>
+
     </tr>
 
     <tr>
         <td><a href="http://spfl.co.uk/clubs/hamilton/"
-target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Hamilton_Academical__1275569612_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Hamilton_Academical__1275569612_thumb.jpg"alt="Hamilton" width="95" height="95"></a><p align="center">Hamilton</p></td>
 
         <td><a href="http://spfl.co.uk/clubs/hearts/"
-target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Hearts__1275569623_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Hearts__1275569623_thumb.jpg"alt="Hearts" width="95" height="95"></a><p align="center">Hearts</p></td>
 
         <td><a href="http://spfl.co.uk/clubs/inverness-caledonian-thistle/"
-target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Inv_Caledonian_Thistle__1275569827_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Inv_Caledonian_Thistle__1275569827_thumb.jpg"alt="Inverness&nbsp;CT" width="95" height="95"></a><p align="center">InvernessCT</p></td>
+
 
         <td><a href="http://spfl.co.uk/clubs/kilmarnock/"
-target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Kilmarnock__1275569529_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Kilmarnock__1275569529_thumb.jpg"alt="Kilmarnock" width="95" height="95"></a><p align="center">Kilmarnock</p></td>
+
     </tr>
 
     <tr>
         <td><a href="http://spfl.co.uk/clubs/motherwell/"
-target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Motherwell__1275569517_thumb.png"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Motherwell__1275569517_thumb.png"alt="Motherwell" width="95" height="95"></a><p align="center">Motherwell</p></td>
+
 
         <td><a href="http://spfl.co.uk/clubs/partick/"
-target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Partick_Thistle__1276086207_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Partick_Thistle__1276086207_thumb.jpg"alt="Partick&nbsp;Thistle" width="95" height="95"></a><p align="center">Partick Thistle</p></td>
+
 
         <td><a href="http://spfl.co.uk/clubs/ross-county/"
-target="_blank"><img src="http://spfl.co.uk/docs/009__001__club_crests__Ross_County__1276086245_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Ross_County__1276086245_thumb.jpg"alt="Ross&nbsp;County" width="95" height="95"></a><p align="center">Ross County</p></td>
+
 
         <td><a href="http://spfl.co.uk/clubs/st-johnstone/"
-target="_blank"><img src="http://spfl.co.uk/docs/009__034__club_crests__St_Johnstone_99__1275901073_thumb.jpg"/</a></td>
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__034__club_crests__St_Johnstone_99__1275901073_thumb.jpg"alt="St&nbsp;Johnstone" width="95" height="95"></a><p align="center">St.Johnstone</p></td>
+
     </tr>
 </table>
-  </div>
+</div>
+<hr> </hr>
+
+<IMG class="spfl" src="http://spfl.co.uk/docs/067_324__champ609x350_1417694439_standard.jpg" alt="SPFL&nbsp;CHAMPIONSHIP" height="198" width="298">
+
+<table align="center">
+    <tr>
+        <td><a href="http://spfl.co.uk/clubs/alloa-athletic/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__033__club_crests__Alloa_Athletic1__1275922397_cmsthumb.png" alt="Alloa" width="95" height="95"></a><p align="center">Alloa</p></td>
+        <td><a href="http://spfl.co.uk/clubs/dumbarton/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Dumbarton__1275569921_cmsthumb.jpg"alt="Dumbarton" width="95" height="95"></a><p align="center">Dumbarton</p></td>
+
+        <td><a href="http://spfl.co.uk/clubs/falkirk"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Falkirk__1276086227_cmsthumb.jpg"alt="Falkirk" width="95" height="95"></a><p align="center">Falkirk</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/hibernian/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Hibernian__1275569538_cmsthumb.jpg"alt="Hibrenian" width="95" height="95"></a><p align="center">Hibernian</p></td>
+    
+
+        <td><a href="http://spfl.co.uk/clubs/livingston/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/067_325__livingston_black_1406019494_cmsthumb.jpg"alt="Livingston" width="95" height="95"></a><p align="center">Livingston</p></td>
+
+</tr>
+        <td><a href="http://spfl.co.uk/clubs/morton/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Greenock_Morton__1275569858_cmsthumb.jpeg"alt="Morton" width="95" height="95"></a><p align="center">Morton</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/queen-of-the-south/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/067_325__qos_new_2014_1400574474_cmsthumb.jpeg"alt="QOS" width="95" height="95"></a><p align="left">Queen OT South</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/raith/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Raith_Rovers__1276086287_cmsthumb.jpg"alt="Raith" width="95" height="95"></a><p align="center">Raith</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/rangers/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Rangers__1275569506_cmsthumb.png"alt="Rangers" width="95" height="95"></a><p align="center">Rangers</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/st-mirren/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__St_Mirren__1275569362_cmsthumb.jpg"alt="St.Mirren" width="95" height="95"></a><p align="center">St.Mirren</p></td>
+
+
+    </tr>
+</table>
+</div>
+
+<hr> </hr>
+<IMG class="spfl" src="http://i2.dailyrecord.co.uk/incoming/article2088945.ece/ALTERNATES/s298/Scottish-League-1.jpg" alt="SPFL-L1" height="198" width="298">
+<table align="center">
+    <tr>
+        <td><a href="http://spfl.co.uk/clubs/airdrieonians/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Airdrie_United__1275570038_cmsthumb.png"alt="Airdrie" width="95" height="95"></a><p align="center">Airdrieonians</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/albion-rovers/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Albion_Rovers__1275570029_cmsthumb.jpg"alt="Albion&nbsp;Rovers" width="95" height="95"></a><p align="center">Albion</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/ayr-united"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__034__club_crests__Ayr_Utd_crest__1275901119_cmsthumb.jpg"alt="Ayr" width="95" height="95"></a><p align="center">Ayr United</p></td>
+
+
+
+        <td><a href="http://spfl.co.uk/clubs/brechin-city/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Brechin_City__1275569953_cmsthumb.jpg"alt="Brechin" width="95" height="95"></a><p align="center">Brechin City</p></td>
+
+    
+
+        <td><a href="http://spfl.co.uk/clubs/cowdenbeath/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Cowdenbeath__1275569932_cmsthumb.png"alt="Cowdenbeath" width="95" height="95"></a><p align="center">Cowdenbeath</p></td>
+
+</tr>
+        <td><a href="http://spfl.co.uk/clubs/dunfermline-athletic/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Dunfermline__1275569899_cmsthumb.jpg"alt="Dunfermline" width="95" height="95"></a><p align="center">Dunfermline</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/forfar-athletic/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Forfar_Athletic__1275569869_cmsthumb.jpg"alt="Forfar&nbsp;Athletic" width="95" height="95"></a><p align="center">Forfar</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/peterhead/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__034__club_crests__Peterhead_FC__1278416633_cmsthumb.png"alt="Peterhead" width="95" height="95"></a><p align="center">Peterhead</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/stenhousemuir/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__034__club_crests__Stenhousemuir_Aug10__1282749352_cmsthumb.jpg"alt="Stenhousemuir" width="95" height="95"></a><p align="center">Stenhousemuir</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/stranraer/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__034__club_crests__Stranraer_crest_Sept10__1283511328_cmsthumb.jpg"alt="Stranraer" width="95" height="95"></a><p align="center">Stranraer</p></td>
+
+
+    </tr>
+</table>
+</div>
+<hr> </hr>
+
+<IMG class="spfl" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Scottish_League_2.svg/1280px-Scottish_League_2.svg.png" alt="SPFL-L2" height="198" width="298">
+
+
+
+<table align="center">
+    <tr>
+        <td><a href="http://spfl.co.uk/clubs/annan-athletic/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Annan_Athletic__1275570005_cmsthumb.jpg"alt="Annan&nbsp;Athletic" width="95" height="95"></a><p align="center">Annan</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/arbroath/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Arbroath__1276086274_cmsthumb.png"alt="Arbroath" width="95" height="95"></a><p align="center">Arbroath</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/berwick-rangers"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Berwick_Rangers__1275569969_cmsthumb.jpg"alt="Berwick" width="95" height="95"></a><p align="center">Berwick Rangers</p></td>
+
+
+
+        <td><a href="http://spfl.co.uk/clubs/clyde/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__034__club_crests__Clyde__1275901162_cmsthumb.jpg"alt="Clyde" width="95" height="95"></a><p align="center">Clyde</p></td>
+
+    
+
+        <td><a href="http://spfl.co.uk/clubs/east-fife/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__East_Fife__1276086338_cmsthumb.jpg"alt="East&nbsp;Fife" width="95" height="95"></a><p align="center">East Fife</p></td>
+
+</tr>
+        <td><a href="http://spfl.co.uk/clubs/east-stirlingshire/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__East_Stirling__1275569887_cmsthumb.jpg"alt="East&nbsp;Stirlingshire" width="95" height="95"></a><p align="center">East Stirling</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/elgin-city/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Elgin__1276086301_cmsthumb.jpg"alt="Elgin" width="95" height="95"></a><p align="center">Elgin City</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/montrose/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Montrose__1276086314_cmsthumb.jpg"alt="Montrose" width="95" height="95"></a><p align="center">Montrose</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/queens-park/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Queens_Park__1276086258_cmsthumb.jpg"alt="Queens&nbsp;Park" width="95" height="95"></a><p align="center">Queens Park</p></td>
+
+
+        <td><a href="http://spfl.co.uk/clubs/stirling-albion/"
+target="_blank"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"  src="http://spfl.co.uk/docs/009__001__club_crests__Stirling_Albion__1275569723_cmsthumb.jpg"alt="Stirling&nbsp;Albion" width="95" height="95"></a><p align="center">Stirling Albion</p></td>
+
+
+    </tr>
+</table>
+
+<p>
+
+
+
+
+
+</p>
+
+
+
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src={{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </body>
+<hr> </hr>
+<footer>
+  <p>Created By Gerard Edelsten</p>
+  <p>40123504@live.napier.ac.uk <a href="40123504@live.napier.ac.uk"></a>
+  Web Design and Development Student at Edinburgh Napier University.</p>
+</footer>
 </html>
 
 

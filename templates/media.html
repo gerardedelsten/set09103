@@ -1,21 +1,14 @@
 <html>
 <head>
-  <title>SPFL</title>
+  <title>Media</title>
   <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
   <style>
     body{ 
       padding-top: 50px;
     } 
   </style>
-
-    {% if title %}
-    <title>{{ title }} - microblog</title>
-    {% else %}
-    <title>microblog</title>
-    {% endif %}
-
-
 </head>
+<link rel="icon" href="http://spfl.co.uk/favicon.png" type="image/png" />
 <script>
 function bigImg(x) {
     x.style.height = "60px";
@@ -27,8 +20,6 @@ function normalImg(x) {
     x.style.width = "40px";
 }
 </script>
-<link rel="icon" href="http://spfl.co.uk/favicon.png" type="image/png" />
-
 <body>
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -50,36 +41,38 @@ function normalImg(x) {
         <li><a href="{{ url_for("teams")}}">Teams</a></li>
         <li><a href="{{ url_for("standings")}}">Standings</a></li>
 	 <li><a href="{{ url_for("media")}}">Media</a></li>
-	 
+       </ul>
+       </div>
+    </div>
   </nav>
+<div class="container">
+<div style="text-align: center;">
 
-<IMG class="spfl" src="https://upload.wikimedia.org/wikipedia/en/3/33/Scottish_Professional_Football_League.svg" alt="SPFL" width="600" height ="500">
-
-   <div class="container">
-      <div style="text-align: center;"> <h1>  </h1>
-        
-        <p class="lead">The SPFL (Scottish Professional Football League) is the new format of Football in Scotland, having formed in 2013 from the old system of two separate governing bodies the SPL and SFL.</p>
-
-<p>The professional game in Scotland has been going since 1890 and the league has had many changes to its structure, this is the latest version of the system and the league now operates in a pyramid, where for the first time since its foundation semi-professional teams can qualify for the professional game. The league structure has 4 leagues, top division is the Premiership which holds 12 teams, the Championship, SPFL1 & SPFL2 all have 10 teams.</p>
-<p>To find out more information on the teams click on the teams page on the navbar. To find out where all teams stand click on standings and to see youtube highlights, funnies and league chat go on or media page where you will find youtube and twitter feeds.</p>
-
-</p>
-
-
-
-<a href="https://www.facebook.com/spflofficial"target="_blank">
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="10" src="http://www.jcub.edu.au/media/1757223/facebook-icon_small_zps48946999.png" alt="Facebook" width="40" height="40"></a></td>
-
+<table cellspacing="10" align="centre">
+<tr>
+<IMG class="spfl" src="https://upload.wikimedia.org/wikipedia/en/3/33/Scottish_Professional_Football_League.svg" alt="SPFL">
+<p>For all the latest Youtube clips and Tweets, look out for competitions on the Twitter feed and goal highlights on Youtube feed</p>
 <a href="https://twitter.com/spfl"target="_blank">
 <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="10" src="http://nihdirectorsblog.files.wordpress.com/2013/07/twitter-icon.gif" alt="Twitter" width="40" height="40"></a></td>
 
 <a href="https://www.youtube.com/user/splofficial"target="_blank">
 <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="10" src="http://www.eastviewbaptist.org.nz/images/page_images/YouTube-Logo-Social-Small.png" alt="YouTube" width="40" height="40"></a></td>
 
+</tr>
+ 
+<table cellspacing="10" align="centre">
+<tr>
+<iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=Splofficial" width="700" height="500" frameBorder="15"></iframe>
+</tr>
 
 
-
+<tr width="120%">
+<a class="twitter-timeline" href="https://twitter.com/spfl" data-widget-id="667691370111483904" width="700">Tweets by @spfl </a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</tr>
+</table>
   </div>
+<hr> </hr>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src={{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
@@ -90,4 +83,7 @@ function normalImg(x) {
   <p>40123504@live.napier.ac.uk <a href="40123504@live.napier.ac.uk"></a>
   Web Design and Development Student at Edinburgh Napier University.</p>
 </footer>
+
 </html>
+
+

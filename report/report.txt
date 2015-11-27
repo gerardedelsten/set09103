@@ -1,73 +1,121 @@
-Introduction to my web-app
+I have developed an informative Web-App for the SPFL which acts as a front for the SPFL
+(Scottish Professional Football League)official website, the user will be able to find information
+on the SPFL, a brief history, the user will be able to find up to date information as well as
+current league standings on all 42 clubs in the SPFL system, as well as latest media from YouTube and Twitter posts.
+The user will need a to be connected to the Internet to use the app as the app has external links for all clubs.
 
-I have developed a prototype for a web app that gives information on SPFL (Scottish Professional Football League Clubs)
-the prototype only has Premiership Clubs, Aberdeen, Celtic, Dundee, Dundee United, Hamilton Academical, Hearts,
-Inverness Caledonian Thistle, Kilmarnock, Motherwell, Partick Thistle, Ross County and St. Johnstone.
+The reason I chose the SPFL clubs is because I have a passion for Scottish Football and I would actually use this Web-App.
+if this was on my computer and for instance I was looking to see team news for my favourite team or check the fixtures
+without going to other news broadcasters. If this Web-App was in to be saved in my favourites I would most likely
+use it 2-3 times a week. I also think other people would use it if it was further developed for a mobile or tablet app.
 
-The home page will be a basic home page with the SPFL logo and links to SPFL social media such as Facebook, Twitter and Youtube.
-It will also have the navigation that will be the same throughout the web-app which once clicked on will take users to, home page,
-teams and standings.
+The purpose of this Web-App is to inform supporters of Scottish Football on everything going on in their club and rivals, from Youtube Videos to league positions
+on all of the teams. This could be used by loads of people from people tracking form for betting to journalists looking to make a match pre match report,
+analysing any given teams form simply by clicking on the teams badge. I'm aware that people interested in teams could simply visit the SPFL page themselves,
+however having a Web-App that has everything at one click would be a handy short cut for anyone on their machine.
 
-Once the user navigates to the teams.html page via the nav bar the twelve team badges will show,
-these are direct links to the SPFL page for the selected club, this will give users detailed information such as
-club kit, honors, stadium information including pitch dimensions, address and capacity, league standings,
-news results and fixtures with selected club top goal scorer.
-
-The standings page on the prototype will show the premiership league table as it stands, this will give users information on how well clubs are doing,
-information on the league table will show, what teams position in the league is, how many games they've won, lost and drawn, as well as having goal difference and
-points accumulated so far.
+Enhancements
+I would love to make this a mobile app and make it available for ipads and tablets, once I learn more about the Linux environment, so that I can make it mobile friendly,
+and if there was a more effective way to create the league table instead of having tables, and having to edit the data every week, but I dont think theres anyway of changing
+the way that is done. But I will look into it, once I have more time to develop it further, I believe there is a market for an app like this and think it would be worth looking
+into marketing this app or creating another similar without using SPFL elements.
 
 Design
 
-The design is basic, the style is a white background with a dark blue nav bar with a gold underline, these are the colours used on on the logo for the SPFL, this is
-kept consistently on the web app, on the home page, the SPFL logo is centred and will have dummy text under this was done simply by using center align html code.
-On the teams page, the clubs badges are laid out using a table with 3 rows of 4 columns, this is also centres to give consistency from the home page.
-The standings page has two images, one the SPFL logo and the Premiership logo, both centred with html code, the league table is made with a simple table, the table
-is split with position, name, wins, loses, draw, goal difference and points in the columns and the 13 rows includes the header and 12 teams, this in the prototype shows
-only the Premiership clubs, but when extended it will have the same consistent look when other divisions are incorporated.
+I created this Web-App by following tutorials online and from the workbook that was giving to me, it gave me the basics of how to make a Web-App
+using Python Flask and doing so using the Linux terminal, navigation from page to page is done using flask code that I learned on the tutorials,  I used HTML code to 
+link elements for external websites such as Twitter, Facebook, Youtube and the SPFL website. I also used HTML to create the pages on the app that have 
+tables for keeping information. I used tables for the teams page, to hold the club badges, these hold the teams logo and their teams name. once clicked
+the user will be taken to a new tab in which they will find detailed information on the the team they have chosen. The user will also be able to navigate to any team if
+they know the URL, for example if the user was to visit Queens Park the third division team they could use http://localhost:5000/queens_park/ and it will take them to 
+the SPFL.co.uk/queens-park/ page. All Routing URLs will be supplied in the readme.txt file.
 
-Enhancements
+The Web-App is simple as its not big in size and wont take long to run, it was tested on two computers windows computers running different operating systems, my personal
+machine runs windows 10 with browsers- Internet Explorer and Google Chrome, the app worked perfectly on that and the JKCC computers which run on windows7 enterprise edition.
+The testing method I used what Alpha testing, I tested the Web-App while I was working my way through and when I was finished the only problems that I was having was 
+spelling errors on variables or typos,  When I was satisfied I ran beta testing and asked my flat mate an experienced web user, who gave me positive feedback but suggested
+that I put the team names under the badges in the teams page, which was something I agreed with and it looks better with it.
 
-The enhancements that I would make to the prototype would be that it isn't responsive on links, the index finger hand changes when scrolled over things such as club badges,
-I would like a responsive rollover effect on it so that the user knows that its a link by making the club badge a couple of pixels bigger, the league standing page is needing
-a new look, I would like to give edits for things that league positions mean in the division such as, green for the top club, gold for 2 and 3rd clubs as they would
-qualify for Europe, a line separating top half from bottom, a light red shade for second bottom team as they would be in a relegation play off and a dark red shade for
-the bottom team as they face automatic relegation from the division. This would make the app look that bit more professional, the users would find it more attractive to look at.
+Critical Reflection
 
-I would also add Youtube video of to the home page of things like goals of the month contenders, this would showcase the talent in the leagues, as well as being more
-appealing to users.
+The Web-App has a basic style, I chose to make it with a basic bootstrap template because has good accessibility and can be used by users of any level of computing
+knowledge, I did make one small design change and it was to add a golden underline on the nav-bar which for a small touch shows a bit of class, as gold is often
+the colour of champions and its a competitive sport so that is good edit for how small it is. The user should feel that it was professionally done, given the Web-App
+is layed out in a simple way with no loading time between screens, and very little time before redirecting to the SPFL website. The Web-App has very little interactivity
+however the user can contact the SPFL via Twitter on the media page, as well as flicking through videos that are on the YouTube feed, theres small things done on the pages
+that give the user feedback which could be better, things like the rollover and changing size of the Facebook, Twitter and Youtube image links on the home page. On the teams page
+when the user rolls over any club badge, it makes the logo bigger to give user feedback that the object is in fact something that they can click on, also if they look to the 
+bottom left of their page they will see that clicking these objects will re-direct them to another page, when the images are enlarged it puts the table structure and 
+all the team badges move, I wish I could fix this and I would say its the biggest visible flaw the Web-App has.
+I added colour to the league tables on the standing page, this also gives the user an idea of what happens with the leagues after all matches are played, there is information there for it
+but without looking the colours on the team position gives them the idea, dark green is automatic promotion, light green is play offs for promotion, dark red is automatic relegation, lighter red
+is relegation play off place and Dark Gold is Champion with the lighter colours for runners up means they have qualified for European Competition.
 
-Personal Evaluation
+Personal Reflection
 
-I feel like I've gained a basic understanding of how to use Levinux from having never used it or anything similar, I was struggling at the start with the program as I
-never knew the terminal was strict with tabs and spaces, this resulted in many errors for my app, during tutorials while actually learning how to use it, once that error was pointed
-out to me I felt a lot more confident in creating my app, I also got more used to typing the syntax, the longer I kept working away at my mistakes that I was making.
-I was used to linking my pages using html that wasn't working for the app because I never knew I had to use the {{ url_forstatic("page name") }}
-while I was building the web app, I never let it slow me down while I couldn't navigate to the page, I created the html side of the website locally and when I found out about the navigation
-I then added it in I attended a syntax surgery sessions that the university provides to get tips on how to use python flask. 
-I struggled to get images working on my prototype web app, I have had to externally host images for it to work,
-I will be looking for the app to host all of its own images for when its complete.
+Personally I feel more used to the Linux terminal however I still feel that I'm a basic user, it is a took that excites me as I learn to become a web developer, learning this
+environment will only help me achieve that, I have learned a lot in a short space of time to be able to complete the Web-App, I started late due to problems with my CW1
+but I was satisfied on completion, I learned how to create a simple Web-App using Bootstrap css, which I then could adapt to suit, learning funcitons on with Flask, 
+as well as importing and working with CSS and HTML. However the challenges I faced and which I couldn't find a way to fix were hosting images locally on the app, tried following
+a tutorial online at an early stage of creating the app, all the images that are on the Web-App are hosted online that is how I got over that challenge. 
+I found a difficult challenge when routing my Web-App's URLS, I wanted the user to be able to enter the team the wanted by going to the address bar and typing for example
+https://localhost:5000/teams/queens_park/ I looked online for a tutorial for something that would automatically redirect me to the spfl.co.uk/queens-park/ page, I tried following
+examples on stackoverflow.com among other tutorials, I couldn't find a way to do it using Flask, my alternative was to use HTML redirect it, this process took me two nights trying
+to come up with a way to do it, although its not using Flask code to redirect me, I'm satisfied that the routing is working.
 
-Resources used
+References
 
-Favicon - http://spfl.co.uk/favicon.png
-SPFL Main Logo - https://upload.wikimedia.org/wikipedia/en/3/33/Scottish_Professional_Football_League.svg
-Premiership logo -http://spfl.co.uk/docs/067_028__ladbrokespremiership_1438786338_standard.png
+http://stackoverflow.com/questions/5411538/redirect-from-an-html-page  (1)
+http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-x-full-text-search (2)
+https://spfl.co.uk (2)
+https://www.facebook.com/spflofficial(3)
+https://twitter.com/spfl (4)
+https://www.youtube.com/user/splofficial (5)
 
-Football Team Badges:
-Aberdeen -http://spfl.co.uk/docs/067_323__aberdeenlogonewjuly2011_1375088117_thumb.jpg
-Celtic -http://spfl.co.uk/docs/009__001__club_crests__Celtic__1275569664_thumb.jpg
-Dundee -http://spfl.co.uk/docs/009__034__club_crests__Dundee_Crest__1275900998_thumb.jpg
-Dundee -United-http://spfl.co.uk/docs/009__001__club_crests__Dundee_United__1275569652_thumb.jpg
-Hamilton -http://spfl.co.uk/docs/009__001__club_crests__Hamilton_Academical__1275569612_thumb.jpg
-Hearts -http://spfl.co.uk/docs/009__001__club_crests__Hearts__1275569623_thumb.jpg
-Inverness Caledianian Thistle -http://spfl.co.uk/docs/009__001__club_crests__Inv_Caledonian_Thistle__1275569827_thumb.jpg
-Kilmarnock -http://spfl.co.uk/docs/009__001__club_crests__Kilmarnock__1275569529_thumb.jpg
-Motherwell -img src="http://spfl.co.uk/docs/009__001__club_crests__Motherwell__1275569517_thumb.png
-Partick -http://spfl.co.uk/docs/009__001__club_crests__Partick_Thistle__1276086207_thumb.jpg
-Ross County -http://spfl.co.uk/docs/009__001__club_crests__Ross_County__1276086245_thumb.jpg
-St.Johnstone -http://spfl.co.uk/docs/009__034__club_crests__St_Johnstone_99__1275901073_thumb.jpg
+Objects used:
+https://upload.wikimedia.org/wikipedia/en/3/33/Scottish_Professional_Football_League.svg
+http://www.jcub.edu.au/media/1757223/facebook-icon_small_zps48946999.png
+http://nihdirectorsblog.files.wordpress.com/2013/07/twitter-icon.gif
+http://www.eastviewbaptist.org.nz/images/page_images/YouTube-Logo-Social-Small.png
 
-Facebook logo -http://www.jcub.edu.au/media/1757223/facebook-icon_small_zps48946999.png
-Twitter logo -http://nihdirectorsblog.files.wordpress.com/2013/07/twitter-icon.gif
-Youtube logo -http://www.eastviewbaptist.org.nz/images/page_images/YouTube-Logo-Social-Small.png
+team logos:
+http://spfl.co.uk/docs/067_323__aberdeenlogonewjuly2011_1375088117_thumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Celtic__1275569664_thumb.jpg
+http://spfl.co.uk/docs/009__034__club_crests__Dundee_Crest__1275900998_thumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Dundee_United__1275569652_thumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Hamilton_Academical__1275569612_thumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Hearts__1275569623_thumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Inv_Caledonian_Thistle__1275569827_thumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Kilmarnock__1275569529_thumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Motherwell__1275569517_thumb.png
+http://spfl.co.uk/docs/009__001__club_crests__Partick_Thistle__1276086207_thumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Ross_County__1276086245_thumb.jpg
+http://spfl.co.uk/docs/009__034__club_crests__St_Johnstone_99__1275901073_thumb.jpg
+http://spfl.co.uk/docs/009__033__club_crests__Alloa_Athletic1__1275922397_cmsthumb.png
+http://spfl.co.uk/docs/009__001__club_crests__Dumbarton__1275569921_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Falkirk__1276086227_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Hibernian__1275569538_cmsthumb.jpg
+http://spfl.co.uk/docs/067_325__livingston_black_1406019494_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Greenock_Morton__1275569858_cmsthumb.jpeg
+http://spfl.co.uk/docs/067_325__qos_new_2014_1400574474_cmsthumb.jpeg
+http://spfl.co.uk/docs/009__001__club_crests__Raith_Rovers__1276086287_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Rangers__1275569506_cmsthumb.png
+http://spfl.co.uk/docs/009__001__club_crests__St_Mirren__1275569362_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Airdrie_United__1275570038_cmsthumb.png
+http://spfl.co.uk/docs/009__001__club_crests__Albion_Rovers__1275570029_cmsthumb.jpg
+http://spfl.co.uk/docs/009__034__club_crests__Ayr_Utd_crest__1275901119_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Arbroath__1276086274_cmsthumb.png
+http://spfl.co.uk/docs/009__001__club_crests__Berwick_Rangers__1275569969_cmsthumb.jpg
+http://spfl.co.uk/docs/009__034__club_crests__Clyde__1275901162_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__East_Fife__1276086338_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__East_Stirling__1275569887_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Elgin__1276086301_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Montrose__1276086314_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Queens_Park__1276086258_cmsthumb.jpg
+http://spfl.co.uk/docs/009__001__club_crests__Stirling_Albion__1275569723_cmsthumb.jpg
+
+League Logos:
+http://spfl.co.uk/docs/067_028__ladbrokespremiership_1438786338_standard.png
+http://spfl.co.uk/docs/067_028__ladbrokeschampionship_1438786337_standard.png
+http://spfl.co.uk/docs/067_028__ladbrokesleagueone_1438786337_standard.png
+http://res.cloudinary.com/lxc2w2yyd/image/upload/v1448031360/Untitled-2_x7zzip.png

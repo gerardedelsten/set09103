@@ -23,13 +23,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href={{ url_for("home")}}>SPFL</a>
+        <a class="navbar-brand" href={{ url_for("home")}}>SPFL Home</a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        
+       
         <li><a href="{{ url_for("teams")}}">Teams</a></li>
         <li><a href="{{ url_for("standings")}}">Standings</a></li>
+	 <li><a href="{{ url_for("media")}}">Media</a></li>
        </ul>
        </div>
     </div>
@@ -38,22 +39,57 @@
 <div style="text-align: center;">
 <table>
 <tr>
-<img class="spfl" src="https://upload.wikimedia.org/wikipedia/en/3/33/Scottish_Professional_Football_League.svg" alt="SPFL">
+<img class="spfl" src="https://upload.wikimedia.org/wikipedia/en/3/33/Scottish_Professional_Football_League.svg" alt="SPFL"width="600" height ="500">
 </tr>
 </table>
+
+
+<p><h1>Heres how it works</h1>. In all leagues a win gets the victor 3points, a draw gives both clubs a point each and losing teams earn 0 points for that match </p>
+<h3>The Premiership</h3> <p>Ladbrokes Premiership. The 12 clubs play 38 matches, with a split into a top and bottom six after 33 games. At the end of the season, the bottom club is relegated while the club in 11th place face the Championship play-off winners over two legs.  The team positioned 1st is the Champions and enter The Ueafa Champions League, 2nd and 3rd teams enter the Europa League. </p>
+
+<h3>Championship</h3>
+<p>he 10 clubs play 36 matches. The champions are promoted to the Premiership and clubs in 2nd, 3rd and 4th enter two-legged play-offs. The winner of 4th v 3rd plays 2nd, with the winner of that tie up against the club finishing 11th in the Premiership. </p>
+
+<h3>League1</h3>
+<p>The 10 clubs play 36 matches and the champions are promoted to the Championship. Clubs in 2nd, 3rd and 4th enter the play-offs, along with the club finishing ninth in the Championship. The bottom club is automatically relegated and the 9th-placed club goes into a play-off with the 2nd, 3rd and 4th placed clubs from League 2</p>
+
+<h3>League2</h3>
+<p>The 10 clubs play 36 matches and the champions are promoted to League 1. Clubs in 2nd, 3rd and 4th enter the play-offs, along with the club finishing ninth in League 1. The bottom club enters a play-off with the winner of a play-off between the Highland and Lowland League champions.</p>
+
+
 
 <IMG class="spfl" src="http://spfl.co.uk/docs/067_028__ladbrokespremiership_1438786338_standard.png" alt="Scots Prem" align="middle">
 
 
-   
-       
         
         <p class="lead"> 
 <table align="center">
 <!DOCTYPE html>
 <html>
 <body>
-<a href="">
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:td-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:td-child(odd) {
+   background-color:#fff;
+}
+table#t01 td	{
+    background-color: black;
+    color: white;
+}
+</style>
 
 <hr> </hr>
 <table style="width:100%">
@@ -67,56 +103,398 @@
     <td><b>Points</b></td>
 
   </tr>
-  <tr>
+  <tr bgcolor="#ffbf00">
     <td>1</td>
-    <td>Celtic</td>
+    <td>CELTIC</td>
     <td>11</td>
-    <td>2</td>		
+    <td>3</td>		
     <td>1</td>
     <td>+27</td>
-    <td>35</td>
+    <td>36</td>
   </tr>
-  <tr>
+  <tr bgcolor="#ffd966">
     <td>2</td>
     <td>Hearts</td>
     <td>9</td>
-    <td>2</td>		
+    <td>3</td>		
     <td>3</td>
     <td>+12</td>
-    <td>29</td>
+    <td>30</td>
   </tr>
-  <tr>
+  <tr bgcolor="#ffd966">
     <td>3</td>
     <td>Aberdeen</td>
     <td>9</td>
-    <td>1</td>		
+    <td>2</td>		
     <td>4</td>
     <td>+5</td>
-    <td>28</td>
+    <td>29</td>
   </tr>
   <tr>
     <td>4</td>
     <td>St Johnstone</td>
-    <td>7</td>
+    <td>8</td>
     <td>2</td>		
     <td>5</td>
-    <td>+7</td>
-    <td>23</td>
+    <td>+8</td>
+    <td>26</td>
   </tr>
   <tr>
     <td>5</td>
     <td>Ross County</td>
-    <td>5</td>
+    <td>6</td>
     <td>3</td>		
     <td>6</td>
-    <td>0</td>
-    <td>18</td>
+    <td>3</td>
+    <td>21</td>
   </tr>
 
   <tr>
     <td>6</td>
     <td>Hamilton Accies</td>
     <td>5</td>
+    <td>4</td>		
+    <td>6</td>
+    <td>-2</td>
+    <td>19</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td>Dundee</td>
+    <td>4</td>
+    <td>7</td>		
+    <td>4</td>
+    <td>-3</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Inverness CT</td>
+    <td>4</td>
+    <td>5</td>		
+    <td>6</td>
+    <td>-3</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Killmarnock</td>
+    <td>4</td>
+    <td>4</td>		
+    <td>7</td>
+    <td>-9</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Partick Thistle</td>
+    <td>3</td>
+    <td>5</td>		
+    <td>7</td>
+    <td>-9</td>
+    <td>14</td>
+  </tr>
+  <tr bgcolor="#ff6666">
+    <td>11</td>
+    <td>Motherwell</td>
+    <td>4</td>
+    <td>2</td>		
+    <td>9</td>
+    <td>-10</td>
+    <td>14</td>
+  </tr>
+
+  <tr>
+
+
+  <tr bgcolor="#e60000">
+    <td>12</td>
+    <td>Dundee united</td>
+    <td>2</td>
+    <td>2</td>		
+    <td>11</td>
+    <td>-19</td>
+    <td>8</td>
+  </tr>
+</table>
+<hr> </hr>
+<img src="http://spfl.co.uk/docs/067_028__ladbrokeschampionship_1438786337_standard.png" border="5">
+<table style="width:100%">
+  <tr>
+    <td><b>No.</b></td>
+    <td><b>Team</b></td>
+    <td><b>Wins</b></td>
+    <td><b>Draw</b></td>		
+    <td><b>Loses</b></td>
+    <td><b>GD</b></td>
+    <td><b>Points</b></td>
+
+  </tr>
+  <tr bgcolor="#269900">
+    <td>1</td>
+    <td>RANGERS</td>
+    <td>12</td>
+    <td>2</td>		
+    <td>1</td>
+    <td>+31</td>
+    <td>37</td>
+  </tr>
+  <tr bgcolor="#66ff33">
+    <td>2</td>
+    <td>Hibernian</td>
+    <td>12</td>
+    <td>1</td>		
+    <td>2</td>
+    <td>+18</td>
+    <td>37</td>
+  </tr>
+  <tr bgcolor="#66ff33">
+    <td>3</td>
+    <td>Falkirk</td>
+    <td>9</td>
+    <td>4</td>		
+    <td>2</td>
+    <td>+16</td>
+    <td>31</td>
+  </tr>
+  <tr bgcolor="#66ff33">
+    <td>4</td>
+    <td>Greenock Morton</td>
+    <td>6</td>
+    <td>5</td>		
+    <td>5</td>
+    <td>0</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Raith</td>
+    <td>7</td>
+    <td>1</td>		
+    <td>6</td>
+    <td>-2</td>
+    <td>22</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td>Queen of the South</td>
+    <td>6</td>
+    <td>3</td>		
+    <td>7</td>
+    <td>-8</td>
+    <td>21</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td>Livingston</td>
+    <td>3</td>
+    <td>2</td>		
+    <td>10</td>
+    <td>-6</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>St Mirren</td>
+    <td>2</td>
+    <td>5</td>		
+    <td>7</td>
+    <td>-9</td>
+    <td>11</td>
+  </tr>
+  <tr bgcolor="#ff6666">
+    <td>9</td>
+    <td>Dumbarton</td>
+    <td>3</td>
+    <td>2</td>		
+    <td>9</td>
+    <td>-13</td>
+    <td>11</td>
+  </tr>
+  <tr bgcolor="#e60000">
+    <td>10</td>
+    <td>Alloa</td>
+    <td>1</td>
+    <td>2</td>		
+    <td>12</td>
+    <td>-27</td>
+    <td>5</td>
+  </tr>
+
+</table>
+<hr> </hr>
+<img src="http://spfl.co.uk/docs/067_028__ladbrokesleagueone_1438786337_standard.png" border="5">
+<table style="width:100%">
+  <tr>
+    <td><b>No.</b></td>
+    <td><b>Team</b></td>
+    <td><b>Wins</b></td>
+    <td><b>Draw</b></td>		
+    <td><b>Loses</b></td>
+    <td><b>GD</b></td>
+    <td><b>Points</b></td>
+
+  </tr>
+  <tr bgcolor="#269900">
+    <td>1</td>
+    <td>AYR UNITED</td>
+    <td>10</td>
+    <td>4</td>		
+    <td>1</td>
+    <td>+17</td>
+    <td>34</td>
+  </tr>
+  <tr bgcolor="#66ff33">
+    <td>2</td>
+    <td>Dunfermline Athletic</td>
+    <td>9</td>
+    <td>4</td>		
+    <td>2</td>
+    <td>+31</td>
+    <td>31</td>
+  </tr>
+  <tr bgcolor="#66ff33">
+    <td>3</td>
+    <td>Stenhousemuir</td>
+    <td>6</td>
+    <td>4</td>		
+    <td>5</td>
+    <td>-7</td>
+    <td>22</td>
+  </tr>
+  <tr bgcolor="#66ff33">
+    <td>4</td>
+    <td>Albion Rovers</td>
+    <td>6</td>
+    <td>3</td>		
+    <td>5</td>
+    <td>-1</td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Airdrieonians</td>
+    <td>6</td>
+    <td>3</td>		
+    <td>7</td>
+    <td>-4</td>
+    <td>20</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td>Peterhead</td>
+    <td>4</td>
+    <td>7</td>		
+    <td>4</td>
+    <td>+10</td>
+    <td>19</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td>Forfar Athletic</td>
+    <td>4</td>
+    <td>5</td>		
+    <td>6</td>
+    <td>-2</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Cowdenbeath</td>
+    <td>4</td>
+    <td>3</td>		
+    <td>7</td>
+    <td>-16</td>
+    <td>15</td>
+  </tr>
+  <tr bgcolor="#ff6666">
+    <td>9</td>
+    <td>Stranraer</td>
+    <td>4</td>
+    <td>2</td>		
+    <td>9</td>
+    <td>-14</td>
+    <td>14</td>
+  </tr>
+  <tr bgcolor="#e60000">
+    <td>10</td>
+    <td>Brechin City</td>
+    <td>3</td>
+    <td>2</td>		
+    <td>10</td>
+    <td>-14</td>
+    <td>11</td>
+  </tr>
+
+</table>
+<hr> </hr>
+<img src="http://res.cloudinary.com/lxc2w2yyd/image/upload/v1448031360/Untitled-2_x7zzip.png" border="5">
+<table style="width:100%">
+  <tr>
+    <td><b>No.</b></td>
+    <td><b>Team</b></td>
+    <td><b>Wins</b></td>
+    <td><b>Draw</b></td>		
+    <td><b>Loses</b></td>
+    <td><b>GD</b></td>
+    <td><b>Points</b></td>
+
+  </tr>
+  <tr bgcolor="#269900">
+    <td>1</td>
+    <td>ANNAN ATHLETIC</td>
+    <td>8</td>
+    <td>3</td>		
+    <td>3</td>
+    <td>+7</td>
+    <td>27</td>
+  </tr>
+  <tr bgcolor="#66ff33">
+    <td>2</td>
+    <td>Clyde</td>
+    <td>7</td>
+    <td>3</td>		
+    <td>4</td>
+    <td>+9</td>
+    <td>24</td>
+  </tr>
+  <tr bgcolor="#66ff33">
+    <td>3</td>
+    <td>Elgin City</td>
+    <td>7</td>
+    <td>2</td>		
+    <td>5</td>
+    <td>+7</td>
+    <td>23</td>
+  </tr>
+  <tr bgcolor="#66ff33">
+    <td>4</td>
+    <td>Queens Park</td>
+    <td>7</td>
+    <td>1</td>		
+    <td>6</td>
+    <td>+8</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>East Fife</td>
+    <td>6</td>
+    <td>3</td>		
+    <td>5</td>
+    <td>+7</td>
+    <td>21</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td>Stirling Albion</td>
+    <td>5</td>
     <td>3</td>		
     <td>6</td>
     <td>-2</td>
@@ -125,64 +503,42 @@
 
   <tr>
     <td>7</td>
-    <td>Dundee</td>
-    <td>4</td>
-    <td>6</td>		
-    <td>4</td>
-    <td>-3</td>
+    <td>Montrose</td>
+    <td>6</td>
+    <td>0</td>		
+    <td>8</td>
+    <td>-5</td>
     <td>18</td>
   </tr>
   <tr>
     <td>8</td>
-    <td>Inverness CT</td>
-    <td>4</td>
-    <td>5</td>		
+    <td>East Stirlingshire</td>
     <td>5</td>
-    <td>-2</td>
-    <td>17</td>
+    <td>1</td>		
+    <td>8</td>
+    <td>-11</td>
+    <td>16</td>
   </tr>
-  <tr>
+  <tr bgcolor="#ff6666">
     <td>9</td>
-    <td>Killmarnock</td>
+    <td>Arbroath</td>
     <td>4</td>
     <td>3</td>		
     <td>7</td>
-    <td>-9</td>
+    <td>-5</td>
     <td>15</td>
   </tr>
-  <tr>
+  <tr bgcolor="#e60000">
     <td>10</td>
-    <td>Motherwell</td>
+    <td>Berwick Rangers</td>
     <td>4</td>
-    <td>2</td>		
-    <td>8</td>
-    <td>-7</td>
-    <td>14</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>Partick Thistle</td>
-    <td>2</td>
-    <td>5</td>		
+    <td>3</td>		
     <td>7</td>
-    <td>-10</td>
-    <td>11</td>
+    <td>-15</td>
+    <td>15</td>
   </tr>
 
-  <tr>
-
-
-  <tr>
-    <td>12</td>
-    <td>Dundee united</td>
-    <td>2</td>
-    <td>2</td>		
-    <td>10</td>
-    <td>-18</td>
-    <td>8</td>
-  </tr>
 </table>
-<hr> </hr>
 
 </body>
 </html>
@@ -192,6 +548,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src={{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 </body>
+<hr> </hr>
+<footer>
+  <p>Created By Gerard Edelsten</p>
+  <p>40123504@live.napier.ac.uk <a href="40123504@live.napier.ac.uk"></a>
+  Web Design and Development Student at Edinburgh Napier University.</p>
+</footer>
 </html>
 
 
